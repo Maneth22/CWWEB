@@ -228,7 +228,11 @@
         }
         .Topic{
             width: auto;
-            text-align: center;
+            display: flex;
+            align-items: center;
+        }
+        .mainHead a{
+            text-decoration: none;
         }
     </style>
 </head>
@@ -237,14 +241,14 @@
     <div class="container">
         <header>
             <div class="mainHead">
-                <div class="Topic">
+                <div class="Topic"><a href="index.html">
                     <div class="F1_in" style="display: flex; align-items: center;">
                         <img src="Resources/Images/sign.png" alt="Logo" style="height: 100px; width:100px">
-                        <div><h1>MediCare</h1><small>We care for You</small></div>
-                    </div>
+                        <div style="text-decoration: none;"><h1>MediCare</h1><small style="color: white;">We care for You</small></div>
+                    </div></a>
                 </div>
-                <div class="Topic">
-                    <h1>Maneth Subhawickrama</h1>
+                <div style="display: flex; justify-content: right; width: 100%;">
+                    <h1 style=" cursor: pointer; font-size: 47px;">Editors Page</h1>
                 </div>
             </div>
             <div class="row">
