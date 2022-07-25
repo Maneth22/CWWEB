@@ -157,7 +157,7 @@
                 <button id="load-more">Load More</button>
             </div>
             <div class="section2">
-                <h2>Your Cart</h2>
+                <h2>Your Cart [<span></span>]</h2>
             </div>
         </div>
         <footer>
@@ -201,21 +201,9 @@
         </footer>
 
     </div>
-    <script>
-        let loadmorebtn= document.querySelector('#load-more');
-        let currentItem=1;
-
-        loadmorebtn.onclick=()=>{
-            let boxes=[...document.querySelectorAll('.product-row')]
-            for (var i=currentItem;i<currentItem+1;i++){
-                boxes[i].style.display='flex';
-            }
-            currentItem+=1;
-            if(currentItem>=boxes.length){
-                loadmorebtn.style.display='none';
-            }
-        }
+    <script src="Resources/Javascript/product-script.js">
     </script>
+
     
 </body>
 </html>
