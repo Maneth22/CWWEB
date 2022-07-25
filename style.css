@@ -306,4 +306,46 @@ p a:hover{
   }
   .cardlist{
     padding-bottom: 20px;
+    font-family: 'Rubik', sans-serif;
+  }
+  .products{
+    margin-top: 0px;
+    margin: 35px;
+    margin-left: 150px;
+    margin-right: 50px;
+    display: inline-block;
+    justify-content: center;
+  }
+  .productCard{
+    border: solid rgb(232, 232, 255);
+    border-radius: 4px;
+    padding: 10px;
+    margin: 25px;
+    width: 280px;
+
+  }
+  .productCard:hover{
+    border-color: rgb(77, 77, 77);
+    transition: 0.5s;
+    background-color: rgb(238, 238, 238);
+  }
+  .productlist{
+    text-align: center;
+    padding: 5px;
+  }
+  .productimage{
+    height: 165px;
+  }
+  .ProductButton{
+    background-color: white;
+    color: black;
+    padding: 8px;
+    width: 140px;
+    border: solid rgba(136, 136, 136, 0.247);
+  }
+  .ProductButton:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    
   }
