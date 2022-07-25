@@ -308,6 +308,12 @@ p a:hover{
     padding-bottom: 20px;
     font-family: 'Rubik', sans-serif;
   }
+  .card-title{
+    color: rgb(45, 115, 247);
+    margin-top: 62px;
+    font-family: 'Rubik', sans-serif;
+    font-size: large;
+  }
   .products{
     margin-top: 0px;
     margin: 35px;
