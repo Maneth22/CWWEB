@@ -472,3 +472,63 @@ p a:hover{
   .dropdown:hover .dropdown-content {
     display: block;
   }  
+  .buttons{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .font_button{
+    display: flex;
+    margin: 18px;
+    background-color: rgba(206, 206, 206, 0.329);
+    color: rgba(0, 0, 0, 0.404);
+    text-align: center;
+    cursor: pointer;
+  }
+  .font_button.active1{
+    background-color: rgb(146, 146, 146);
+  }
+  .font_button:nth-child(2){
+    font-size: 1.5rem;
+  }
+  .font_button:nth-child(3){
+    font-size: 2rem;
+  }
+
+.formdiv{
+    background-color: #4398b4;
+    margin-left: 27%;
+}
+.formdiv h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.formdiv form{
+    display: inline-block;
+    justify-content: center;
+    margin: 40px;
+}
+.form-contrtol{
+    padding: 9px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    color: white;
+}
+.form-contrtol input{
+    float: inline-end;
+    width: 280px;
+}
+.form-contrtol label{
+    margin-right: 25px;
+}
+.formBtn{
+    background-color: #7aceeb;
+    padding: 8px;
+    width: 110px;
+    margin-top: 2rem;
+    font-weight: bold;
+    color: white;
+}
+#error{
+    color: red;
+    text-align: center;
+}

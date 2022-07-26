@@ -37,18 +37,54 @@
         <div class="Hero-section">
             <div>      
                 <div class="row2">
-                    <form action="" method="get">
-                        
-                    </form>
+                    <div class="formdiv">
+                        <form action="" method="get" id="myform">
+                            <div>
+                                <h3>Personal Details</h3>
+                            </div>
+                            <div class="form-contrtol">
+                                <label for="name">Name</label>
+                                <input type="text" name="name" id="fullname">
+                            </div>
+                            <div class="form-contrtol">
+                                <label for="email">Email</label>
+                                <input type="text" name="email" id="email">
+                            </div>
+                            <div class="form-contrtol">
+                                <label for="address">Address</label>
+                                <input type="text" name="address" id="address">
+                            </div>
+                            <div class="form-contrtol">
+                                <label for="telephone">Telephone</label>
+                                <input type="text" name="telephone" id="telephone">
+                            </div>
+                            <div class="form-control" style="text-align: center; margin-top: 2rem;">
+                                <input value="SUBMIT" class="formBtn" type="button" onclick="validate()">
+                                <input type="reset" value="RESET" class="formBtn">
+                            </div>
+                            <div class="form-control">
+                                <span id="error"></span>
+                            </div>
+                        </form>
+                    </div>
                    
+                </div>
+                <div class="row2">
+
                 </div>
             </div>
             <div class="section2">
 
                 
-                
+
+            </div>
+            <div style="background-color: rgb(202, 231, 255); text-align: center; color: rgba(0, 112, 216, 0.884);">
+                <span>
+                    <a href="Editor_Maneth.html" class="abt_link">Designed and Developed by Sanjula Maneth</a>
+                </span>
             </div>
         </div>
+
         <footer>
             <div class="F1">
                 <div class="F1_in">
@@ -89,7 +125,8 @@
             <hr style="color: white;">
         </footer>
     </div>
-    <script src="product-script.js"></script>
+    <script src="Resources/Javascript/product-script.js"></script>
+    <script src="Resources/Javascript/form.js"></script>
 </body>
 
 </html>

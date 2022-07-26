@@ -21,7 +21,7 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="text">
         <header>
             <div class="mainHead">
                 <a href="index.html">
@@ -57,6 +57,14 @@
             </div>
 
         </header>
+        <div class="buttons">
+            <span>Check Your Font size Here</span>
+            <ul>
+                <li class="font_button active1" style="font-size: 1rem;" onclick="document.getElementById('text').style.fontSize='1rem'">A</li>
+                <li class="font_button"  onclick="document.getElementById('text').style.fontSize='1.6rem'">A</li>
+                <li class="font_button"  onclick="document.getElementById('text').style.fontSize='2rem'">A</li>
+            </ul>
+        </div>
         <div class="Hero-section">
             <h2 style="text-align: center;">Our Products</h2>
             <div class="products">
@@ -158,10 +166,10 @@
                     </div>
                     <div class="productCard">
                         <ul>
-                            <li class="productlist"><img src="Resources/Images/New folder/blmachine.jpg" alt="bpmachine" class="productimage" ></li>
-                            <li class="productlist">Blood Pressure Machine</li>
-                            <li class="productlist">Rs.7800.00</li>
-                            <li class="productlist"><button class="ProductButton" id="cart12">Add To Cart</button></li>
+                            <li class="productlist text"><img src="Resources/Images/New folder/blmachine.jpg" alt="bpmachine" class="productimage" ></li>
+                            <li class="productlist text">Blood Pressure Machine</li>
+                            <li class="productlist text">Rs.7800.00</li>
+                            <li class="productlist text"><button class="ProductButton" id="cart12">Add To Cart</button></li>
                         </ul>
                     </div>  
                 </div>
@@ -174,11 +182,15 @@
                 </div>
                 <div class="totalCostproducts"></div>
                 <div class="checkout">
-                    <a href="Checkout.html" target="_blank" class="checkoutBtn">CHECKOUT</a>
+                    <a href="Checkout.html" target="_blank" class="checkoutBtn" id="text2">CHECKOUT</a>
                 </div>
 
             </div>
-
+            <div style="background-color: rgb(202, 231, 255); text-align: center; color: rgba(0, 112, 216, 0.884);">
+                <span>
+                    <a href="Editor_Maneth.html" class="abt_link">Designed and Developed by Sanjula Maneth</a>
+                </span>
+            </div>
         </div>
         <footer>
             <div class="F1">
@@ -221,9 +233,8 @@
         </footer>
 
     </div>
-    <script src="Resources/Javascript/product-script.js">
-    </script>
-
+    <script src="Resources/Javascript/product-script.js"></script>
+    <script src="Resources/Javascript/loadmore.js"></script>
     
 </body>
 </html>
