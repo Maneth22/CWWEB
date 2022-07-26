@@ -532,3 +532,8 @@ p a:hover{
     color: red;
     text-align: center;
 }
+.calTotal{
+  margin-top: 60px;
+  margin-bottom: 50px;
+  text-align: center;
+}

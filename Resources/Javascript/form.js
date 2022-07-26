@@ -21,9 +21,32 @@ function validate(){
         errText="success";
         erroMsg.innerHTML=errText;
         document.getElementById("myform").reset(); 
+        
+        x=localStorage.setItem('customerName',Name);
+        console.log(x);
         return false;
+
+        
     }
     return false;
 
 };
 
+function calculateTotal(){
+    let totalContainer= document.querySelector('.calTotal');
+    let cartCost= localStorage.getItem('totalCost');
+    console.log(cartCost);
+    totalContainer.innerHTML='<span style="margin-right:3rem;">Total Cost </span>'+'Rs.'+cartCost+'.00';
+
+
+}
+function popup(){
+    let displayName=localStorage.getItem('customerName');
+    let cartCost= localStorage.getItem('totalCost');
+    alert("Dear "+displayName+" ,You have confirmed the amount of Rs."+cartCost+".00");
+    localStorage.clear();
+}
+
+document.getElementById("totalClick").addEventListener("click", popup); 
+
+calculateTotal();
