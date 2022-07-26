@@ -132,7 +132,7 @@ hr.white{
 }
 
 .mainHead {
-    background-color: rgba(73, 115, 255, 0.829);
+    background-color: rgb(0, 197, 197);
     padding: 35px;
     display: flex;
     flex-direction: row;
@@ -155,7 +155,7 @@ hr.white{
 }
 .section2{
     padding-top: 50px;
-    background-color: rgb(202, 231, 255);
+    background-color: rgba(0, 197, 197, 0.253);
     padding-bottom: 250px;
 
 }
