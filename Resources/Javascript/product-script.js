@@ -123,6 +123,7 @@ function cartNumbers(productsInCart){
     }
     setIems(productsInCart);
     totalCost(productsInCart);
+    displayCart();
 
 
     
@@ -169,21 +170,21 @@ function displayCart(){
     let cartItems = localStorage.getItem('presentInCart');
     cartItems=JSON.parse(cartItems);
     let productContainer= document.querySelector('.checkoutProducts');
+    let totalContainer= document.querySelector('.totalCostproducts');
     let cartCost= localStorage.getItem('totalCost');
-
     console.log(cartItems);
 
     if(cartItems && productContainer){
         productContainer.innerHTML='';
         Object.values(cartItems).map(item =>{
-            console.log(item.name)
-            productContainer.innerHTML+= item.name;
-            productContainer.innerHTML+= item.price;
-            productContainer.innerHTML+= item.inCart;
-            
+            productContainer.innerHTML+=item.name+'<span style="margin-right:2rem;"></span>'+'Rs.'+item.price+'.00'+'<span style="margin-right:1rem;"></span>'+item.inCart+'<span style="margin-right:2rem;"></span>'+'Rs.'+(item.price*item.inCart)+'.00' + '<br><br>';
+            totalContainer.innerHTML='<span style="margin-right:3rem;">Total Cost </span>'+'Rs.'+cartCost+'.00';
         });
         
     }
+
+
+
 }
 
 

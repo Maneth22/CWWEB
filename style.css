@@ -391,11 +391,28 @@ p a:hover{
     background-color: white;
     padding: 13px;
     transition: 0.5s;
-    margin-left: 3rem;
+}
 
-  }
   .checkoutBtn:hover{
     background-color: rgb(98, 133, 247);
     color: white;
 
+  }
+  .checkoutProducts{
+    margin-left: 30px;
+    padding: 35px;
+    font-family: 'Rubik', sans-serif;
+    height: 500px;
+    width: 800px;
+    background-color: white;
+  }
+  .checkout{
+    margin-left: 4rem;
+    margin-top: 20px;
+  }
+  .totalCostproducts{
+    margin-top: 10px;
+    margin-left: 30px;
+    padding: 35px;
+    font-family: 'Rubik', sans-serif;
   }
