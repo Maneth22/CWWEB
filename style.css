@@ -369,7 +369,8 @@ p a:hover{
     border: solid lightblue;
     font-weight: bolder;
     font-family: 'Rubik', sans-serif;
-    font-size: larger;color: lightblue;
+    font-size: larger;
+    color: lightblue;
     width: 190px;
     justify-content: center;
     margin-left: 40%;
@@ -378,4 +379,23 @@ p a:hover{
   #load-more:hover{
     background-color: lightblue;
     color: white;
+  }
+  .checkoutBtn{
+    text-decoration: none;
+    font-family:  'Rubik', sans-serif;
+    font-size: large;
+    font-weight: bold;
+    border: solid rgb(98, 133, 247);
+    border-radius: 15px;
+    color: rgb(27, 60, 170);
+    background-color: white;
+    padding: 13px;
+    transition: 0.5s;
+    margin-left: 3rem;
+
+  }
+  .checkoutBtn:hover{
+    background-color: rgb(98, 133, 247);
+    color: white;
+
   }
